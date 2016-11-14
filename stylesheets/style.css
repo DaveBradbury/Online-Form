@@ -1,0 +1,262 @@
+/***************************
+*Basic Layout Mobile Device*
+***************************/
+
+.header {
+	box-sizing:content-box;
+	max-width: 100%;
+	height: 50px;
+	background-color: #000;
+	padding: 15px 15px;
+	font-family: Oswald;
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+}
+h1 {
+	margin-top: 10px;
+}
+.subheader {
+	max-width: 100%;
+	height: 100px;
+	border-bottom: 3px solid #000;
+	margin: 0 auto;
+}
+.subheader p {
+	max-width: 70%;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+.subheader h2{
+	font-family: Oswald;
+	text-align: center;
+	max-width: 100%;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+h2 {
+	font-family: Oswald;
+	max-width: 100%;
+	margin-top: 15px;
+	margin-left: 6px;
+}
+p, label {
+	color: #95979b;
+	font-size: 0.8em;
+	margin-left: 6px;
+}
+
+.newsletter {
+	border-top: 3px solid #000;
+	margin-top: 10px;
+}
+.newsletter label,
+.newsletter input {
+	display: inline;
+}
+.contact-info {
+	max-width: 100%;
+	border-top: 2px solid #000;
+	margin-top: 1px;
+}
+.contact-info label, input {
+	display: block;
+}
+.contact-info input, 
+.contact-info select {
+	width: 95%;
+	margin: 5px 6px;
+	font-size: 0.8em;
+	height: 30px;
+	border: 2px solid lightblue;
+	border-radius: 2px;
+}
+.contact-info label {
+	width: 95%;
+	font-size: 0.8em;
+	margin: 0 auto;
+	margin-left: 6px;
+}
+#gender *, #title *, #county * {
+	color: #95979b;
+	background-color: #ebe7df;
+	font-size: 0.9em;
+}
+input[placeholder="required   "] {
+	text-align: right;
+}
+input[name^="user"]:focus {
+	background-color: #ddd;
+}
+select:focus {
+	background-color: #ddd;
+}
+input:focus {
+	background-color:#ddd;
+}
+.newsletter :checked + label {
+	font-weight: bold;
+}
+
+textarea {
+	width: 100%;
+	max-width: 95%;
+	background-color: #ebe7df;
+	border: 2px solid lightblue;
+	border-radius: 2px;
+	margin:0 6px;
+}
+input, select, textarea {
+	box-sizing: content-box;
+	margin: 10px 6px;
+	background-color: #ebe7df;
+	color: #95979b;
+}
+#submit {
+	margin: 0 auto;
+	width: 95%;
+	max-width: 95%;
+	height: 30px;
+	background-color: #3ab30e;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 1em;
+}
+.footer {
+	font-size: 0.8em;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 30px;
+	font-style: italic;
+}
+#postcode {
+	max-width:35%;
+	margin: 10px 6px;
+}
+
+/***************************
+*Basic Layout Tablet Device*
+***************************/
+
+@media (min-width: 768px){
+	p {
+		font-size: 1.2em;
+	}
+.contact-info {
+	display: inline;
+	width: 45%;
+	max-width: 45%;
+	float: left;
+
+}
+contact-info label {
+	margin-bottom: 5px;
+}
+.newsletter {
+	display: inline;
+	width: 45%;
+	max-width: 45%;
+}
+.newsletter p {
+	font-size: 1em;
+	line-height: 1.5; 
+}
+.newsletter input{
+	margin: 10px 0;
+}
+textarea {
+	width: 45%;
+	max-width: 45%;
+	height: 25%;
+	max-height: 25%;
+}
+
+#submit {
+	margin: 25px;
+	width: 40%;
+	max-width: 40%;
+	height: 55px;
+	font-size: 1.5em;
+	margin-top: 25px;
+}
+form {
+	margin-bottom: 25px;
+}
+.footer {
+	display: block;
+	clear: both;
+	font-size: 0.8em;
+	margin: 0 auto;
+}
+.contact-info {
+	border-top: 0;
+	margin-right: 50px;
+}
+}
+
+
+/****************************
+*Basic Layout Desktop Device*
+****************************/
+
+@media (min-width:1025px) {
+.contact-info {
+	margin: 0 auto;
+	display: block;
+	float: none;
+	width: 60%;
+	max-width: 60%;
+	border-top: 2px solid #000;
+}
+
+.newsletter {
+	margin: 0 auto;
+	display: block;
+	float: none;
+	width: 60%;
+	max-width: 60%;
+}
+.footer {
+	margin: 0 auto;
+	display: block;
+}
+.subheader {
+	max-width: 60%;
+	height: 100px;
+	border-bottom: 3px solid #000;
+	margin: 0 auto;
+	margin-bottom: 1px;
+}
+.subheader p {
+	max-width: 100%;
+}
+textarea {
+	width: 100%;
+	max-width: 95%;
+}
+#submit {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 98%;
+}
+.contact-info label, input {
+	display: block;
+}
+
+}
+
+/****************************
+*********Clear Fix***********
+****************************/
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: "";
+	clear: both;
+	height: 0;
+}
+
+	
